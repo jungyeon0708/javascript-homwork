@@ -32,3 +32,72 @@ console.log("회원등급 : " + memberGrade);
 // 10. "버튼이 클릭되었는지 여부"를 담는 변수를 선언하고 불리언 타입 값을 설정하세요.
 let isButtonClicked = true;
 console.log(isButtonClicked);
+
+// 1. 인사말 메시지
+
+function greetUser(username) {
+  return "안녕하세요! " + username + "님. 좋은 하루되세요!";
+}
+console.log(greetUser("김정연"));
+
+// 2. 원가 계산
+function calculateOriginalPrice(priceWithTax) {
+  const taxRate = 0.033;
+  const originalPrice = priceWithTax / (1 + taxRate);
+  return originalPrice;
+}
+console.log(calculateOriginalPrice(12500));
+
+// 3. 주류 판매 가능 여부
+
+const canSellAlcohol = (registrationCard) => registrationCard.age >= 19;
+
+const registrationCard = {
+  name: "김정연",
+  age: 30,
+  gender: "여성",
+};
+
+const registrationCard2 = {
+  name: "김철수",
+  age: 18,
+  gender: "남성",
+};
+console.log(canSellAlcohol(registrationCard));
+console.log(canSellAlcohol(registrationCard2));
+
+// 4. 할인가 계산
+
+function getDiscountedPrice(originalPrice, discountPercent) {
+  return originalPrice - originalPrice * (discountPercent / 100);
+}
+
+console.log(getDiscountedPrice(18700, 20));
+
+// 5. 등급 판단 함수
+function getGrade(score) {
+  let grade, description;
+
+  if (score >= 90) {
+    grade = "A";
+    description = "매우 우수";
+  } else if (score >= 80) {
+    grade = "B";
+    description = "우수";
+  } else if (score >= 70) {
+    grade = "C";
+    description = "보통";
+  } else if (score >= 60) {
+    grade = "D";
+    description = "미달, 통과 기준 근접";
+  } else {
+    grade = "F";
+    description = "낙제";
+  }
+
+  return { score, grade, description };
+}
+console.log(getGrade(87));
+console.log(getGrade(100));
+console.log(getGrade(40));
+console.log(getGrade(65));
