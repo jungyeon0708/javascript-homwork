@@ -1,0 +1,134 @@
+body {
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  margin: 50px;
+}
+
+.container {
+  width: 375px;
+  height: 812px;
+  background-color: white;
+  overflow-y: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f7f7f7;
+  padding: 42px 20px 16px 20px;
+}
+
+.logo-img {
+  width: 88px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.menu-btn {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-btn img {
+  width: 24px;
+  height: 24px;
+}
+
+.main-title {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding-left: 20px;
+  padding-top: 56px;
+}
+
+.main-title h1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: -1px;
+  color: black;
+}
+
+.character-img {
+  width: 43px;
+  height: 43px;
+  object-fit: contain;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+}
+
+.faq-item {
+  background-color: #eef4ff;
+  border-radius: 16px;
+  padding: 24px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  transform: translateY(-2px);
+}
+
+.faq-question {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #191f28;
+  line-height: 26px;
+  padding-right: 30px;
+}
+
+.faq-arrow {
+  position: absolute;
+  right: 20px;
+  top: 30%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: #666;
+  transition: transform 0.3s ease;
+}
+
+.faq-item:hover .faq-arrow {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+/* FAQ 답변 영역 (확장용) */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding-top: 0;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 200px;
+  padding-top: 15px;
+}
+
+.faq-item.active .faq-arrow {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.faq-answer-content {
+  font-size: 15px;
+  color: rgba(25, 31, 40, 0.8);
+  line-height: 24px;
+  letter-spacing: -0.5px;
+  font-weight: 400;
+  gap: 8px;
+}

@@ -1,0 +1,6 @@
+@import "./components.css";
+
+body {
+  background-color: #eceff1;
+  margin: 50px;
+}
