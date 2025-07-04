@@ -78,11 +78,15 @@
     position: absolute;
     left: 0;
     top: 0;
+    opacity: 0;
+    transform: translateX(100px);
   }
 
   .carousel-page.active {
     display: flex;
     position: relative;
+    opacity: 1;
+    transform: translateX(0);
   }
 
   /* 게임 카드 */

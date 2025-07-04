@@ -1,0 +1,325 @@
+body {
+  background: #bdbdbd;
+  margin: 0;
+  font-family: "Pretendard", "Noto Sans KR", Arial, sans-serif;
+  margin: 50px;
+}
+
+.main-content {
+  background: #fff;
+  width: 1728px;
+  height: 1118px;
+  display: flex;
+
+  .main-left {
+    display: flex;
+    flex-direction: column;
+    width: 670px;
+    height: 701px;
+    margin-top: 128px;
+    margin-left: 88px;
+
+    .main-label {
+      color: #b71c1c;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      margin-left: 8px;
+    }
+
+    .main-title {
+      font-size: 86px;
+      top: 107px;
+      left: 2px;
+
+      .thin {
+        font-weight: 100;
+        line-height: 120%;
+        color: #b31116;
+
+        .comma {
+          font-family: Arial, sans-serif;
+          font-weight: 100;
+        }
+      }
+      .bold {
+        font-weight: 700;
+        line-height: 120%;
+        color: #b31116;
+      }
+    }
+
+    .main-desc {
+      color: #1d1316;
+      font-size: 20px;
+      font-weight: 350;
+      line-height: 140%;
+      top: 480px;
+      left: 8px;
+    }
+
+    .main-btns {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin-top: 84px;
+
+      .btn {
+        font-size: 24px;
+        font-weight: 500;
+        border-radius: 100px;
+        padding: 12px 36px;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+
+        &.black {
+          background: #1d1316;
+          color: #fff;
+
+          &:hover,
+          &:focus {
+            background: #b31116;
+            color: #fff;
+            transition:
+              background 0.2s,
+              color 0.2s;
+          }
+        }
+
+        &.link {
+          background: transparent;
+          color: #b31116;
+          border: none;
+
+          &:hover,
+          &:focus {
+            color: #b31116;
+            text-decoration: underline;
+            transition:
+              background 0.2s,
+              color 0.2s;
+          }
+        }
+      }
+    }
+  }
+
+  .main-right {
+    margin-top: 64px;
+    margin-right: 88px;
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+
+    .grid-svg-bg {
+      width: 846px;
+      height: 993px;
+      z-index: 1;
+
+      .grid-line {
+        position: absolute;
+        stroke-width: 1px;
+        stroke: rgba(162, 160, 160, 0.5);
+      }
+      /* 격자선 배치 */
+      .line-h1 {
+        top: 191px;
+        left: 41px;
+        width: 805px;
+      }
+
+      .line-h2 {
+        top: 441px;
+        left: 31.5px;
+        right: 77.4px;
+        bottom: 552.17px;
+        width: 737px;
+      }
+
+      .line-h3 {
+        top: 690px;
+        left: 0;
+        width: 773px;
+      }
+
+      .line-v1 {
+        left: 191px;
+        top: 0.5px;
+        height: 992px;
+      }
+
+      .line-v2 {
+        left: 440px;
+        top: 122px;
+        height: 791px;
+      }
+
+      .line-v3 {
+        top: 28.9px;
+        right: 155.39px;
+        left: 690.61px;
+        height: 818px;
+      }
+    }
+
+    .svg-shapes {
+      z-index: 2;
+
+      .svg-shape {
+        position: absolute;
+      }
+      /* 도형들 배치 */
+      .shape-01 {
+        top: 65.85px;
+        right: 155.39px;
+        left: 566px;
+        width: 124.929px;
+        height: 124.825px;
+      }
+
+      .shape-02 {
+        top: 191px;
+        right: 405px;
+        left: 190px;
+        width: 249.857px;
+        height: 124.825px;
+      }
+
+      .shape-03 {
+        top: 690px;
+        left: 316px;
+        right: 280px;
+        width: 249.857px;
+        height: 124.825px;
+      }
+
+      .shape-04 {
+        top: 690px;
+        left: 190px;
+        right: 530px;
+        width: 124.929px;
+        height: 124.825px;
+      }
+
+      .shape-05 {
+        top: 440px;
+        left: 65.96px;
+        width: 124.929px;
+        height: 124.825px;
+      }
+
+      .shape-06 {
+        top: 814.8px;
+        right: 530.18px;
+        bottom: 53.37px;
+        left: 252.86px;
+        width: 62.964px;
+        height: 124.825px;
+      }
+
+      .shape-07 {
+        top: 814.8px;
+        left: 190.89px;
+        bottom: 53.37px;
+        right: 592.14px;
+        width: 62.964px;
+        height: 124.825px;
+      }
+
+      .shape-08 {
+        top: 565.15px;
+        left: 316px;
+        right: 280px;
+        width: 249.857px;
+        height: 124.825px;
+      }
+
+      .shape-09 {
+        top: 315.5px;
+        right: 531.18px;
+        bottom: 552.67px;
+        left: 189.89px;
+        width: 124.929px;
+        height: 124.825px;
+      }
+
+      .shape-10 {
+        top: 565.15px;
+        bottom: 303px;
+        right: 530.18px;
+        left: 191px;
+        width: 124.929px;
+        height: 124.825px;
+      }
+
+      .shape-11 {
+        top: 440.33px;
+        right: 530.18px;
+        bottom: 427.85px;
+        left: 190.89px;
+        width: 124.929px;
+        height: 124.825px;
+      }
+
+      .shape-12 {
+        top: 190.68px;
+        right: 280.32px;
+        bottom: 677.5px;
+        left: 440.75px;
+        width: 124.929px;
+        height: 124.825px;
+      }
+
+      .shape-13 {
+        top: 565.15px;
+        right: 155.39px;
+        bottom: 178.2px;
+        left: 565.68px;
+        width: 124.929px;
+        height: 249.65px;
+      }
+
+      .shape-14 {
+        top: 440.33px;
+        right: 155.39px;
+        bottom: 425.85px;
+        left: 565.68px;
+        width: 124.825px;
+        height: 124.929px;
+      }
+
+      .shape-15 {
+        top: 315.5px;
+        right: 155.39px;
+        bottom: 552.67px;
+        left: 565.68px;
+        width: 124.929px;
+        height: 124.825px;
+      }
+
+      .shape-16 {
+        top: 190.68px;
+        right: 155.39px;
+        bottom: 677.5px;
+        left: 565.68px;
+        width: 124.929px;
+        height: 124.825px;
+      }
+    }
+
+    /* 중앙 인물 이미지 */
+    .center-image {
+      position: absolute;
+      top: 315.5px;
+      right: 280.32px;
+      left: 315.82px;
+      bottom: 427.85px;
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      z-index: 3;
+      background-color: #fff;
+    }
+  }
+}
